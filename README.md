@@ -1,1 +1,2 @@
-# QuoteMachine
+# Quote machine
+FreeCodeCamp project.
