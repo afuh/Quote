@@ -1,0 +1,27 @@
+#container {
+  color: #FFFFFF;
+  background: #111111;
+  margin: 200px auto;
+  margin-bottom: 20px;
+  padding: 100px;
+  min-height: 150px; }
+
+#containerTwiter {
+  color: #FFFFFF;
+  background: #111111;
+  padding: 10px; }
+
+button {
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  color: #111111; }
+  button:hover {
+    color: #111111 !important;
+    background-color: #DDDDDD; }
+
+h4 {
+  font-size: 24px;
+  text-align: right;
+  font-family: "Kaushan Script"; }
+
+/*# sourceMappingURL=style.css.map */
