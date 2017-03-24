@@ -1,10 +1,23 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
 #container {
   color: #FFFFFF;
   background: #111111;
   margin: 200px auto;
   margin-bottom: 20px;
   padding: 100px;
-  min-height: 150px; }
+  min-height: 150px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px; }
 
 #containerTwiter {
   color: #FFFFFF;
