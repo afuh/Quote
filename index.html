@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="#" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" type="text/css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet prefetch">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet prefetch">
 
     <link href="styles/lib/normalize.css" type="text/css" rel="stylesheet">
@@ -17,28 +16,27 @@
     <link href="styles/main.css" type="text/css" rel="stylesheet">
     <script src="main.js" type="text/javascript"></script>
 </head>
-
 <body>
-    <div class="container" id="container">
-        <div class="row">
-            <div class="col-md-offset-2 col-md-8 col-xs-12">
-                <h3><i class="fa fa-quote-left"></i> <span id="quotes"></span> <i class="fa fa-quote-right"></i></h3>
-                <hr>
-                <h4><span id="autores"></span></h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-offset-2 col-md-6 col-xs-8">
-                <button id="hit" type="button" class="btn btn-block btn-lg"><i class="fa fa-quote-left"></i> <i class="fa fa-quote-right"></i></button>
-            </div>
-            <div class="col-md-2 col-xs-4">
-                <button id="tweet" type="button" class="btn btn-block btn-lg"><i class="fa fa-twitter"></i></button>
-            </div>
-        </div>
+
+
+  <section>
+    <div class="cont">
+      <div class="quote">
+        <h1><i class="fa fa-quote-left"></i> <span id="quotes"></span> <i class="fa fa-quote-right"></i></h1>
+      </div>
+      <div class="autor">
+        <h4><span id="autores"></span></h4>
+      </div>
     </div>
-    <div class="container text-right">
-        <p>Creado por <a href="#" target="_blank">Robertito Redobledo</a></p>
+    <div class="buttons">
+      <button id="getQuote" type="button"><i class="fa fa-quote-left"></i> <i class="fa fa-quote-right"></i></button>
+      <button id="tweet" type="button"><i class="fa fa-twitter"></i></button>
     </div>
+  </section>
+  <!-- <div>
+    <p>Creado por <a href="#" target="_blank">Robertito Redobledo</a></p>
+  </div> -->
+
 
 </body>
 </html>
