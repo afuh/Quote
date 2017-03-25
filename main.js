@@ -15,8 +15,8 @@ var app = {
   cache: function(q, a){
       this.quote = q;
       this.autor = a;
-      this.tweetQuote;
-      this.tweetAutor;
+      this.tweetQuote = "";
+      this.tweetAutor = "";
   },
   request: function() {
       var request = new XMLHttpRequest(),
@@ -26,10 +26,10 @@ var app = {
       request.send();
       request.onload = function() {
           app.cache(this.response.quotes, this.response.autores);
-    }
+    };
   },
   randomQuote: function() {
-      var i = Math.floor(Math.random() * app.quote.length)
+      var i = Math.floor(Math.random() * app.quote.length);
       app.cache.tweetQuote = app.quote[i];
       return app.quote[i];
   },
