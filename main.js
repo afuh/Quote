@@ -6,11 +6,6 @@ var app = {
   init: function(){
       this.request();
       this.buttons();
-
-      function delay() {
-          setTimeout(app.render, 300);
-        }
-      delay();
   },
   cache: function(q, a){
       this.quote = q;
@@ -19,14 +14,12 @@ var app = {
       this.tweetAutor = "";
   },
   request: function() {
-      var request = new XMLHttpRequest(),
-          url = "https://raw.githubusercontent.com/afuh/Quote/master/quotes.json";
-      request.open('GET', url);
-      request.responseType = 'json';
-      request.send();
-      request.onload = function() {
-          app.cache(this.response.quotes, this.response.autores);
-    };
+      fetch('https://raw.githubusercontent.com/afuh/Quote/master/quotes.json')
+        .then(res => res.json())
+          .then(res => {
+            app.cache(res.quotes, res.autores);
+            app.render()
+          })
   },
   randomQuote: function() {
       var i = Math.floor(Math.random() * app.quote.length);

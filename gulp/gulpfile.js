@@ -14,13 +14,13 @@ gulp.task('serve', ['sass'], function() {
 });
 
 gulp.task('sass', function() {
-  return gulp.src("../styles/lib/main.sass")
+  return gulp.src("../styles/main.sass")
     .pipe(sass({
       errLogToConsole: true,
-      outputStyle: 'nested'
+      outputStyle: 'compressed'
     }).on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(gulp.dest("../styles"))
+    .pipe(gulp.dest("../public"))
     .pipe(browserSync.stream());
 });
 
